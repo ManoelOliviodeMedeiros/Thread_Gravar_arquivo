@@ -15,12 +15,11 @@ public class Produtos implements Runnable{
        
         for (int p = 1; p < 100; p++){
             System.out.println(p);
-        try {
-            FileWriter arq = new FileWriter("c:\\pasta\\produtos.txt");
-            arq.write(p+"\n");
-            arq.close();
-            
-        } catch (Exception e) {
+            try {
+                FileWriter arq = new FileWriter("c:\\pasta\\produtos.txt"); //Gravar em auquivo
+                arq.write(p+"\n");
+              arq.close();
+          } catch (Exception e) {
         }
        }
     }

@@ -21,7 +21,7 @@ public class Clientes implements Runnable{
             System.out.println("Silveira;Natal;RN;Brasil");
             
                try {
-                    FileWriter arq = new FileWriter("c:\\pasta\\clientes.txt", true);
+                    FileWriter arq = new FileWriter("c:\\pasta\\clientes.txt", true); //gravar em arquivo
                      arq.write("\"Nome;Cidade;Uf;Pais\"\n");
                      arq.write("\"Silveira;Natal;RN;Brasil\"\n");
                    arq.close();
